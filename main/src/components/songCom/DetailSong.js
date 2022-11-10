@@ -5,7 +5,13 @@ export default function DetailSong() {
   const { song } = useContext(Songs);
 
   return (
-    <div className="col-span-1 p-3">
+    <div className="col-span-1 p-3"
+          style={{
+        backgroundImage: `url(
+          ${songs.links.images[1].url}
+        )`,
+      }}
+>
       <h2 className="text-rose-400 font-bold">
         <p className="fa fa-forward text-rose-400 mr-1" />
         NOW PLAYING
@@ -30,18 +36,6 @@ export default function DetailSong() {
           <span className="text-white text-3xl">{song.author}</span>
         </Link>
       </div>
-    </div>
-  );
-  return (
-    <div
-      className="song-detail"
-      style={{
-        backgroundImage: `url(
-          ${songs.links.images[1].url}
-        )`,
-      }}
-    >
-      
     </div>
   );
 }
