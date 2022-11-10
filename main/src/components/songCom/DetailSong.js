@@ -8,7 +8,7 @@ export default function DetailSong() {
     <div className="col-span-1 p-3"
           style={{
         backgroundImage: `url(
-          ${songs.links.images[1].url}
+          ${song.links.images[1].url}
         )`,
       }}
 >
