@@ -18,7 +18,7 @@ function Home() {
   };
 
   useEffect(() => {
-    fetch("http://localhost:16522/api/songs")
+    fetch("https://music-website-project.herokuapp.com/api/songs")
       .then((res) => res.json())
       .then((result) => {
         setListSong(result.songs);
