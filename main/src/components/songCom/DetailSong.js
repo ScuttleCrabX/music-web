@@ -32,4 +32,16 @@ export default function DetailSong() {
       </div>
     </div>
   );
+  return (
+    <div
+      className="song-detail"
+      style={{
+        backgroundImage: `url(
+          ${songs.links.images[1].url}
+        )`,
+      }}
+    >
+      
+    </div>
+  );
 }
